@@ -10,3 +10,29 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/nitin/workspace
 
 !ENTRY org.eclipse.ui 4 4 2015-09-14 04:45:21.627
 !MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.eclipse.jdt.debug 4 125 2015-09-14 05:29:26.186
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+com.sun.jdi.InternalException: Got error code in reply:23
+	at org.eclipse.jdi.internal.MirrorImpl.defaultReplyErrorHandler(MirrorImpl.java:277)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.methods(ReferenceTypeImpl.java:1014)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.locationsOfLine(ReferenceTypeImpl.java:1451)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.locationsOfLine(ReferenceTypeImpl.java:996)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.determineLocations(JavaLineBreakpoint.java:313)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.newRequests(JavaLineBreakpoint.java:258)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.createRequest(JavaBreakpoint.java:442)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.createRequests(JavaBreakpoint.java:568)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.addToTarget(JavaBreakpoint.java:532)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.addToTarget(JavaLineBreakpoint.java:161)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.breakpointAdded(JDIDebugTarget.java:1220)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.reinstallBreakpointsIn(JDIDebugTarget.java:880)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.redefineTypesJDK(JavaHotCodeReplaceManager.java:596)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:461)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:421)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:310)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1078)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1061)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
