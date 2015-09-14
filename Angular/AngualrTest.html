@@ -1,0 +1,33 @@
+
+
+<html>
+<body ng-app="demoApp" ng-controller="SimpleController">
+	{{hello}}
+	<br />
+	<input type="text" ng-model="people.model">
+	<br />
+	<hello-world></hello-world>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript">
+
+
+var module=angular.module("demoApp",[]);
+module.directive("helloWorld", function(){
+
+var simpleController=function SimpleController($scope){
+$scope.peoples=[
+ {name:"John Doe",age:"45"},
+ {name:"Jane Smith",age:"23"},
+ {name:"Justin d",age:"56"}
+];
+};
+return {
+   restrict:'E',
+   template:"<div><li ng-repeat="people in peoples">{{people.name}}</li><div>",	
+   controller: simpleController
+}   
+})	;
+</script>
+</body>
+</html>
