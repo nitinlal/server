@@ -1,0 +1,20 @@
+package com.nitin;
+
+public class Test {
+
+	
+	public static void main(String args[]){
+		@SuppressWarnings("unused")
+		Integer a = 1;
+		int b = 2;
+		
+		modify(a,b);
+		
+      
+		
+	}
+
+	private static void modify(Integer a, int b) {
+       a++;b++		
+	}
+}

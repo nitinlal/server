@@ -1,0 +1,24 @@
+package com.nitin;
+
+public class Test {
+
+	static Integer a = 1;
+	static int b = 2;
+	static String c = "nitin";
+	
+	public static void main(String args[]){
+		
+		modify(a,b,c);
+		System.out.println("a" +a);
+		System.out.println("b" +b);
+		System.out.println("c" +b);
+      
+		
+	}
+
+	private static void modify(Integer a, int b, String c) {
+       a++;
+       b++;
+       c = "sachin";
+	}
+}

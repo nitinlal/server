@@ -1,0 +1,12 @@
+package com.nitin;
+
+public class Test {
+
+	static Integer a = 1;
+	static int b = 2;
+	public static void main(String args[]){
+		
+		
+		
+	}
+}
